@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/color-flipper.css" />
+    <title>Color Flipper</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-container">
+        <a href="../index.html"
+          ><img src="/images/back.svg" alt="back icon"
+        /></a>
+        <h1>
+          <span style="color: green">C</span>
+          <span style="color: red">o</span>
+          <span style="color: blue">l</span>
+          <span style="color: coral">o</span>
+          <span style="color: orange">r</span>
+          Flipper
+        </h1>
+        <div class="btns">
+          <button class="color-btn" id="green-btn" onclick="setColor(this.id)">
+            Green
+          </button>
+          <button class="color-btn" id="red-btn" onclick="setColor(this.id)">
+            Red
+          </button>
+          <button class="color-btn" id="blue-btn" onclick="setColor(this.id)">
+            Blue
+          </button>
+          <button class="color-btn" id="coral-btn" onclick="setColor(this.id)">
+            Coral
+          </button>
+          <button class="color-btn" id="orange-btn" onclick="setColor(this.id)">
+            Orange
+          </button>
+          <button class="color-btn" id="yellow-btn" onclick="setColor(this.id)">
+            Yellow
+          </button>
+          <button class="color-btn" id="white-btn" onclick="setColor(this.id)">
+            White
+          </button>
+          <button class="color-btn" id="random-btn" onclick="randomColor()">
+            Random
+          </button>
+        </div>
+        <div>
+          <p>Chosen Color: <span id="chosen-color"></span></p>
+        </div>
+
+        <script src="../js/color-flipper.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

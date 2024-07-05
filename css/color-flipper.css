@@ -1,0 +1,105 @@
+root{
+  --btn-color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+.box-container {
+  width: 50%;
+  border: 1px solid black;
+  padding: 30px 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(44, 43, 43);
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+ 
+a{
+  display: block;
+  text-align: left;
+  margin-left: 10px;
+}
+a img{
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+  a img:hover{
+    transform: scale(1.1);}
+h1 {
+  font-weight: bolder;
+  font-size: 65px;   
+  text-shadow: 0 0 5px rgb(255, 255, 255); 
+  margin: 20px auto;
+}
+
+.color-btn {
+  width: 90px;
+  height: 70px;
+  margin: 10px 5px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  background-color: var(--btn-color);
+  transition: transform 0.3s ease ;
+}
+.color-btn:hover{
+  transform: scale(1.1);
+}
+.color-btn:active{
+  transform: rotateY(0.5turn);
+}
+
+  #green-btn{
+    --btn-color: green;
+  }  
+  #red-btn{
+    --btn-color: red;
+  } 
+  #blue-btn{
+    --btn-color: blue;
+  }
+  #coral-btn{
+    --btn-color: coral;
+  }
+  #orange-btn{
+    --btn-color: orange;
+  }
+  #yellow-btn{
+    --btn-color: yellow;
+    color: black;
+  }
+  #random-btn{
+    background: linear-gradient(90deg, red, orange, green, aqua, blue);
+  }
+  #white-btn{
+    --btn-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  #green-btn:hover,
+  #red-btn:hover,
+  #blue-btn:hover,
+  #coral-btn:hover,
+  #orange-btn:hover,
+  #yellow-btn:hover,
+  #white-btn:hover,
+  #random-btn:hover  
+  {
+    opacity: 0.8;  
+    cursor: pointer;
+  }

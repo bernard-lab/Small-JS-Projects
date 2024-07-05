@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/todo.css" />
+    <title>My To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <a href="../index.html">
+          <img src="/images/back.svg" alt="" width="20" height="20" />
+        </a>
+        <h1>
+          My Todo List
+          <img src="/images/list.svg" alt="list image" />
+        </h1>
+        <section class="todo">
+          <input type="text" id="input" placeholder="Add task here..." />
+          <button onclick="addTask()">Add Task</button>
+        </section>
+        <ul id="list-container">
+          <!-- To do List will be added here -->
+        </ul>
+      </main>
+    </div>
+
+    <script src="../js/todo.js"></script>
+  </body>
+</html>
